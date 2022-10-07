@@ -1,6 +1,6 @@
-from typing import List
+from typing import List, Generator
 
-def _gen_prime() -> int:
+def _gen_prime() -> Generator[int, None, None]:
     curr_num = 2
     while True:
         if all(
